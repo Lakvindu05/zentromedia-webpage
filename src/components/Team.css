@@ -1,0 +1,103 @@
+.wrapper {
+  width: 90%;
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  margin: 8% 3.5%;
+}
+
+.wrapper h2 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.wrapper hr {
+  width: 100px;
+  margin: 100px auto;
+}
+
+.laka {
+  width: 50%;
+}
+
+.members {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+}
+
+.team-members {
+  margin: 8px;
+}
+
+.wrapper img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  margin: 10px;
+  border: 5px solid #8650a3;
+}
+
+.wrapper h4,
+.wrapper p {
+  text-align: center;
+  font-size: 15px;
+  margin: 7px;
+}
+
+.laka button {
+  font-family: "Poppins";
+  padding: 1% 6%;
+  border-radius: 15px;
+  cursor: pointer;
+  width: 650px;
+  height: 67px;
+  left: 76px;
+  top: 419px;
+  color: #fff;
+  background: linear-gradient(111.62deg, #452855 40.21%, #8650a3 100%);
+  border-radius: 50px;
+  border-style: none;
+  margin-bottom: 10%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.laka button:hover {
+  background: #8650a3;
+  transform: translateY(-10px);
+  box-shadow: 0 10px 15px 0 #8650a3;
+}
+
+.laka .button-text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.wrapper .laka .team-text {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 758px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0;
+  }
+
+  .laka,
+  .members {
+    width: 100%;
+  }
+  .laka button {
+    width: 80%;
+    margin-left: 10%;
+  }
+}

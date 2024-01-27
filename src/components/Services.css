@@ -1,0 +1,204 @@
+.servicesbox {
+  display: flex;
+  flex-direction: row;
+  margin: 0 10%;
+}
+
+.servicesboxleft {
+  width: 50%;
+  padding: 0 5%;
+  margin-top: 30px;
+}
+
+.servicesbox .servicesboxleft p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  /* identical to box height */
+  color: #8650a3;
+}
+
+.servicesbox .servicesboxleft p .serviestitle2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 54px;
+  /* identical to box height */
+  background: linear-gradient(111.62deg, #5f3078 40.21%, #8650a3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.servicesbox .servicesboxleft .serviestitle3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 36px;
+  /* identical to box height */
+  color: #8650a3;
+}
+
+.servicesbox .servicesboxleft .servies-description {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: justify;
+  color: #8650a3;
+  margin-bottom: 40px;
+}
+
+.servicesboxright {
+  width: 50%;
+  padding: 0 5%;
+  margin-top: 40px;
+}
+
+.servicesbox .servicesboxright p {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 30px;
+  /* identical to box height */
+  color: #4c2c5c;
+}
+
+.servicesbox .servicesboxright p .serviestitle4 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 36px;
+  color: #4c2c5c;
+}
+
+.servicesbox .servicesboxright ul li {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height */
+  color: #4c2c5c;
+}
+
+.servicesbox .servicesboxright ul {
+  margin-left: -48px;
+}
+
+.servicesbox .servicesboxright div img {
+  width: 30px;
+  height: 30px;
+  padding-right: 3%;
+}
+
+.servicesboxleft button {
+  font-family: "Poppins";
+  padding: 1% 6%;
+  border-radius: 40px;
+  cursor: pointer;
+  width: 336px;
+  height: 67px;
+  color: #fff;
+  background: linear-gradient(111.62deg, #452855 40.21%, #8650a3 100%);
+  border-style: none;
+  margin-bottom: 10%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.servicesboxleft button:hover {
+  background: #8650a3;
+  transform: translateY(-10px);
+  box-shadow: 0 10px 15px 0 #8650a3;
+}
+
+.servicesboxleft .button-text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+}
+
+.servicesbox .servicesboxright button {
+  font-family: "Poppins";
+  padding: 1% 6%;
+  border-radius: 15px;
+  cursor: pointer;
+  width: 100%;
+  color: #fff;
+  background: linear-gradient(111.62deg, #452855 40.21%, #8650a3 100%);
+  border-style: none;
+  margin-bottom: 10%;
+  transition: transform 0.2s ease-in-out;
+}
+
+.servicesbox .servicesboxright button:hover {
+  background: #8650a3;
+  transform: translateY(-10px);
+  box-shadow: 0 10px 15px 0 #8650a3;
+}
+
+.servicesbox .servicesboxright .button-text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+}
+.servicesbox .servicesboxright .serviceContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.servicesbox .servicesboxright ul div{
+  width:350px; 
+}
+/* mobile screens */
+@media screen and (max-width: 758px) {
+  .servicesbox {
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+  }
+
+  .servicesboxleft,
+  .servicesboxright {
+    width: 80%;
+    margin-left: 10%;
+    padding: 0;
+  }
+
+  .servicesbox .servicesboxleft .servies-description {
+    text-align: center;
+  }
+
+  .servicesboxleft button {
+    margin: 0;
+    margin-left: -20px;
+  }
+
+  .servicesbox .servicesboxright div img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .servicesbox .servicesboxright div img {
+    padding-right: 1%;
+  }
+
+  .servicesbox .servicesboxright ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0;
+    /* Center services horizontally */
+  }
+  .servicesbox .servicesboxright ul li {
+    font-size: 18px;
+    text-align: center;
+    margin: 0 10px;
+    margin-bottom: 10px;
+    line-height: 24px;
+  }
+}

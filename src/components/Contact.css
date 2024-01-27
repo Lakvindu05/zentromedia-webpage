@@ -1,0 +1,173 @@
+.ContactBox {
+  margin: 8% 5%;
+  width: 90%;
+  height: 750px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: #f2daff;
+  box-shadow: 5px 5px 10px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+}
+
+.ContactBox img {
+  width: 45%;
+  height: 100%;
+}
+
+.contactinsidebox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: auto;
+  padding-bottom: auto;
+  width: 55%;
+  height: 100%;
+  background: linear-gradient(180deg, #ffffff 48.96%, #efefef 100%);
+  box-shadow: -3px 0px 17px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 30px 30px 30px 0px;
+  z-index: 0;
+  padding-left: 7%;
+  /* Added padding to move content to the left */
+}
+
+.tiles-Text {
+  padding-top: 5%;
+}
+
+#Title1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.01em;
+  color: #8650a3;
+  padding-left: 5%;
+}
+
+#Title2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: -0.01em;
+  color: #452855;
+  padding-left: 5%;
+}
+
+.description1 {
+  font-style: normal;
+  font-weight: 275;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: -0.01em;
+  padding-left: 5%;
+}
+
+.bold-texts {
+  font-weight: bold;
+}
+
+.Title3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.01em;
+  color: #8650a3;
+  padding-left: 5%;
+}
+
+ul {
+  list-style: none;
+  padding-left: 10%;
+}
+
+ul div {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 2%;
+}
+
+ul li {
+  font-size: 15px;
+}
+
+ul li p {
+  display: flex;
+}
+
+.nottodolist {
+  list-style: none;
+  padding-left: 0;
+}
+
+.nottodolist div {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 2%;
+  margin-left: 6%;
+  /* Added margin to move the list items to the left */
+}
+
+.nottodolist li {
+  font-size: 15px;
+}
+
+.nottodolist img {
+  width: 14.15px;
+  height: 15.12px;
+  padding-right: 3%;
+  padding-top: 0.8%;
+}
+
+.nottodolist img {
+  width: 14.15px;
+  height: 15.12px;
+  padding-right: 3%;
+  padding-top: 0.8%;
+}
+
+@media screen and (max-width: 758px) {
+  .ContactBox {
+    flex-direction: column;
+    height: 1400px;
+    width: 90%;
+    margin: 10% 5%;
+  }
+
+  .ContactBox img {
+    width: 100%;
+  }
+
+  .contactinsidebox {
+    width: 100%;
+    border-radius: 0px 0px 30px 30px;
+  }
+
+  .nottodolist img {
+    width: 14px;
+    height: 14px;
+  }
+
+  #Title1,
+  #Title2,
+  .Title3,
+  .description1,
+  ul {
+    padding-left: 4%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  #Title1,
+  .Title3 {
+    font-size: 21px;
+  }
+
+  #Title2 {
+    font-size: 24px;
+  }
+}
